@@ -12,4 +12,10 @@
     const inputReason = (e) => {
         console.log(e.target.value);
     }
+
 ```
+                        
+####  字符串转 变量名
+
+   eval('('+`tabColumns${props.num}`+')')
+   window[`tabColumns${props.num}`]
