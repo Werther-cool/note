@@ -2,7 +2,7 @@
 
 Boolean 值、数字和字符串的原始值的有趣之处在于它们是伪对象，这意味着它们实际上具有属性和方法
 
-# toString() 
+# toString()
 
 不过 ECMAScript 定义所有对象都有 toString() 方法
 `Boolean` 类型的 toString() 方法只是输出 "true" 或 "false"，结果由变量的值决定：
@@ -31,7 +31,7 @@ parseInt() 方法首先查看位置 0 处的字符，判断它是否是个有效
      - Number(value) - 把给定的值转换成数字（可以是整数或浮点数）；
      - String(value) - 把给定的值转换成字符串；
 
-## typeof 
+## typeof
  - typeof 是 运算符/关键字 返回值为字符串类型
 
 对变量或值调用 typeof 运算符将返回下列值之一：
@@ -45,8 +45,8 @@ Function - 如果变量是函数
 ```
  typeof 对未声明的变量返回undefined，
  而其他运算符只能用于已声明的变量上。
- 
- 
+
+
 ## instanceof 运算符
 在使用 typeof 运算符时采用引用类型存储值会出现一个问题，无论引用的是什么类型的对象，它都返回 "object"。
 ECMAScript 引入了另一个 Java 运算符 instanceof 来解决这个问题。
@@ -58,7 +58,7 @@ ECMAScript 引入了另一个 Java 运算符 instanceof 来解决这个问题。
 var oStringObject = new String("hello world");
 alert(oStringObject instanceof String);	//输出 "true"
 ```
-- 对象  instanceOf  构造函数/具体类型 
+- 对象  instanceOf  构造函数/具体类型
   - 对象.constructor
   - (实例的constructor 来自原型对象的constructor 共同指向 构造函数)
   -  constructor 一定指向构造函数
@@ -66,13 +66,13 @@ alert(oStringObject instanceof String);	//输出 "true"
 ## in
 ```
     var json ={a:12,b:13};
-    
+
     alert('length' in json); //false
     alert('a' in json);  // true
 ```
-- in关键字 
+- in关键字
     - 在判断属性是否存在于对象中时,key 是字符串,需要加双引号
-    - in 操作array数组时 操作的是索引值 (1 in arrar) 
+    - in 操作array数组时 操作的是索引值 (1 in arrar)
     - 原型对象上的属性也会被枚举
 
 ### json转字符串
@@ -81,18 +81,18 @@ JSON.stringify(json)
     var json={a:12,b:13};
     var jsonString =JSON.stringify(json);
     alert(jsonString); //{"a":12,"b":13}
-    
+
 ```
 
-### == 
+### ==
  - 比较数值是否相等,(比较,基本数据类型)
  - 是否指向同一块内存空间(比较,引用类型)
 
 ### 逻辑运算符
- - 位运算符  &  和  |  返回值为bool 
+ - 位运算符  &  和  |  返回值为bool
  - 逻辑运算符 && 和 ||  返回的是比较的值
 
- 
+
 
 
 
@@ -238,20 +238,14 @@ json  键值对 抽取函数  k : function(){},
     window.open   返回值:新窗口  参数
     window.close
     window.navagitor.userAgent 返回浏览器信息
-    window.location  地址 
-    
-    
-```
-    try{
-        可能出错的代码
-    }catch(e){
-        补救的代码
-    }
-```    
+    window.location  地址
 
-    
+
+
+
 # Date
+
 ```
-时间戳: var times= (new Date()).getTime() 
+时间戳: var times= (new Date()).getTime()
 getTime() 返回从 1970 年 1 月 1 日至今的毫秒数
 ```
