@@ -9,3 +9,12 @@ slice(开始索引,结束索引)
 ```
 {one.other[0].value.indexOf('-')=='-1' ? one.other[0].value :one.other[0].value.slice(1) }
 ```
+
+### toString
+
+```
+  Object.toString()
+```
+对象转JSON
+
+JSON.stringify(Object)
