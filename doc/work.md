@@ -1,5 +1,12 @@
 ## 工作总结
 
+##router 传参
+
+  View 接受参数    supplier:this.props.params.supplier || "xiubo",
+  router /order/stewarOrderList/:supplier
+  <Link to={'/order/stewarOrderList/:xiubo'} className="blockDiv">
+                <span>秀</span> <span>秀博公司</span>
+  </Link>
 
 ### 工程上新增doc 文件夹
 
