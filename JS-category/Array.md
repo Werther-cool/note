@@ -22,3 +22,17 @@ let newArr =  Array.map((currentValue,index,array)=>{
     //doSometing
   })
 ```
+
+## splice
+
+## includes
+
+var pets = ['cat', 'dog', 'bat'];
+console.log(pets.includes('cat'));
+
+##  filter
+
+var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const result = words.filter(word => word.length > 6);
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
