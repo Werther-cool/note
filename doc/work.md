@@ -32,4 +32,12 @@
 
  ## css
    height: calc(~'100vh - 90px');
-   
+
+ ## 跳转
+   Toast.loading('正在登录', 1, () => {
+   if (window.app.currentRouterPath === '/') {
+     window.app.routerGoTo('home');
+   } else {
+     window.app.routerGoTo(window.app.currentRouterPath);
+   }
+ });

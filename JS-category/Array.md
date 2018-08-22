@@ -36,3 +36,33 @@ var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 const result = words.filter(word => word.length > 6);
 console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
+
+## find
+
+Array的find 只能遍历数组
+lodash的find 可以遍历 数组对象内的属性
+
+var ages = [3, 10, 18, 20];
+
+function checkAdult(age) {
+    return age >= 18;
+}
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = ages.find(checkAdult);
+}
+
+
+
+###lodash find
+
+```
+  var users = [
+    { 'user': 'barney',  'age': 36, 'active': true },
+    { 'user': 'fred',    'age': 40, 'active': false },
+    { 'user': 'pebbles', 'age': 1,  'active': true }
+  ];
+
+  _.find(users, function(o) { return o.age < 40; });
+  // => object for 'barney'
+ ```

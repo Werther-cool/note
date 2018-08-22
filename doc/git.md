@@ -65,7 +65,8 @@ git remote add origin git@github.comxx.git
 git remote rm origin
 // 推送
 git  push -u origin master  
-
+// 本地新建分支后 推送到远程
+git push origin workdev
 ## 常用
 
 
