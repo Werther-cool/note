@@ -41,3 +41,14 @@
      window.app.routerGoTo(window.app.currentRouterPath);
    }
  });
+
+ ## 小程序
+
+ 动态获取值key value
+ if (data.preload) {
+    this.key = Object.keys(data.preload) [0];
+    this.itemList = data.preload[this.key]
+    console.log("itemList",this.itemList);
+  }
+
+  this.$preload({[this.key]:this.itemList});
