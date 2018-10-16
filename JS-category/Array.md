@@ -24,6 +24,11 @@ let newArr =  Array.map((currentValue,index,array)=>{
 ```
 
 ## splice
+arrayObject.splice(index,howmany,item1,.....,itemX)
+删除或添加 index 位置 howmany 删除的数量 item 添加的内容
+修改原数组
+
+
 
 ## includes
 
@@ -33,7 +38,7 @@ console.log(pets.includes('cat'));
 ##  filter
 
 var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-const result = words.filter(word => word.length > 6);
+const result = words.filter(word => return word.length > 6);
 console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
 

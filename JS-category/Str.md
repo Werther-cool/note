@@ -18,3 +18,7 @@ slice(开始索引,结束索引)
 对象转JSON
 
 JSON.stringify(Object)
+
+### split
+
+字符串 转数组

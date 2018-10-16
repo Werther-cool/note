@@ -52,3 +52,7 @@
   }
 
   this.$preload({[this.key]:this.itemList});
+
+  ### react 表单
+  增添删除
+  getFieldDecorator
