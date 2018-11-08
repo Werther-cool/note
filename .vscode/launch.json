@@ -2,6 +2,16 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - PoorDogTestDrive",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "PoorDogTestDrive",
+      "args": ""
+    },
+    {
+      "type": "java",
       "name": "Debug (Launch)",
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -19,6 +29,17 @@
       "stopOnEntry": false,
       "mainClass": "Dog",
       "args": ""
+    },
+    {
+      "name": "ts-node",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/node_modules/ts-node/dist/bin.js",
+      "args": [
+        "${relativeFile}"
+      ],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector"
     }
   ]
 }

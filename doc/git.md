@@ -13,9 +13,15 @@ Remote：远程仓库
   git pull
   git rebase dev
   git push
-
 ## my
-
+  撤销 add
+  git checkout -- <文件> 
+  git checkout -- . 放弃当前修改
+  撤销 commit 
+  git reset --hard HEAD^ 回到上一次 commit 的状态  也可以 git reset --hard commitID
+  撤销 push
+  git revert commitID  //提交一个新的版本回滚
+  git reset  //删除push
 
 列出所有本地分支和远程分支
 

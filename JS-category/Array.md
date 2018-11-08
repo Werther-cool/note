@@ -71,3 +71,13 @@ function myFunction() {
   _.find(users, function(o) { return o.age < 40; });
   // => object for 'barney'
  ```
+## reduce
+
+
+```
+const accountNumAmount = detailData.itemList
+  ? detailData.itemList.reduce((previous, current) => {
+    return previous = add(previous, current.accountNum || 0);
+  }, 0)
+  : 0;
+```
