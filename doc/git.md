@@ -23,12 +23,16 @@ Remote：远程仓库
   git revert commitID  //提交一个新的版本回滚
   git reset  //删除push
 
+##
+git stash
+git stash pop
+
 ## rebse 冲突
   1 解决冲突 
   2 git add 文件
   3 git rebase --continue 继续
   4 pull push 
-
+  
 列出所有本地分支和远程分支
 
 $ git branch -a
