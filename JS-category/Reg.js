@@ -11,9 +11,9 @@ var text = 'cat,bat,eat'
 var re = /.at/g
 // console.log(1,re,re.lastIndex);
 
-// var matches = re.exec(text);
+var matches = re.exec(text);
 // var matches = text.match(re);
-var matches = text.replace(/.at/g,"word ($1)");
+// var matches = text.replace(/.at/g,"word ($1)");
 console.log(matches);
 
 
