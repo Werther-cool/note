@@ -15,8 +15,6 @@ let newArr =  Array.map((currentValue,index,array)=>{
 
 ##forEach
 
-修改原数组
-
 ```
   Array.forEach((currentValue,index,array)=>{
     //doSometing
@@ -56,6 +54,8 @@ function checkAdult(age) {
 function myFunction() {
     document.getElementById("demo").innerHTML = ages.find(checkAdult);
 }
+
+queryList.find(item => item.key === 'rebateName').value = recordName
 
 
 
